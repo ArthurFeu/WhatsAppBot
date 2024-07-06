@@ -9,4 +9,6 @@ PRODUTOS
 
 CONST TO FUNCTION (?)
 
+BUG CRITICO - CARRINHOS SE MISTURANDO
+
 ==================================

@@ -26,23 +26,89 @@ client.on('qr', qr => {
 
 client.on('ready', () => {
 	console.log('=== BOT EM FUNCIONAMENTO ===');
-	simulaMensagem('31971638616@c.us', '!oi');
-	simulaMensagem('31971638616@c.us', '1');
-	simulaMensagem('31971638616@c.us', '1');
-	simulaMensagem('31971638616@c.us', 'P');
-	simulaMensagem('31971638616@c.us', '40');
-	simulaMensagem('31971638616@c.us', '15');
-	simulaMensagem('31971638616@c.us', 'sim');
-	simulaMensagem('31971638616@c.us', '1'); // Adiciona mais luvas
-	simulaMensagem('31971638616@c.us', '2');
-	simulaMensagem('31971638616@c.us', 'PP');
-	simulaMensagem('31971638616@c.us', 'M');
-	simulaMensagem('31971638616@c.us', '5');
-	simulaMensagem('31971638616@c.us', 'sim');
-	simulaMensagem('31971638616@c.us', '3');
-	simulaMensagem('31971638616@c.us', 'sim');
-	simulaMensagem('31971638616@c.us', 'Avenida Marechal Castelo branco 265 JK');
 
+	// Início do primeiro pedido
+	simulaMensagem('31971638616@c.us', '!oi');  // Primeira mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '!oi');  // Primeira mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '1');    // Segunda mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '1');    // Segunda mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '1');    // Terceira mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '1');    // Terceira mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'P');    // Quarta mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'P');    // Quarta mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '55');   // Quinta mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '40');   // Quinta mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '20');   // Sexta mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '8');   // Sexta mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'sim');  // Sétima mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'sim');  // Sétima mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '1');    // Adiciona mais luvas (primeiro número)
+	simulaMensagem('31971638617@c.us', '1');    // Adiciona mais luvas (segundo número)
+	
+	simulaMensagem('31971638616@c.us', '2');    // Oitava mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '2');    // Oitava mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'PP');   // Nona mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'PP');   // Nona mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'M');    // Décima mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'M');    // Décima mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '5');    // Décima primeira mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '1');    // Décima primeira mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'sim');  // Décima segunda mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'sim');  // Décima segunda mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', '3');    // Décima terceira mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', '3');    // Décima terceira mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'sim');  // Décima quarta mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'sim');  // Décima quarta mensagem do segundo número
+	
+	simulaMensagem('31971638616@c.us', 'Avenida Marechal Castelo branco 265 JK'); // Décima quinta mensagem do primeiro número
+	simulaMensagem('31971638617@c.us', 'Avenida Marechal Castelo branco 265 JK'); // Décima quinta mensagem do segundo número
+	
+
+
+	// simulaMensagem('31971638616@c.us', '!oi');
+	// simulaMensagem('31971638616@c.us', '1');
+	// simulaMensagem('31971638616@c.us', '1');
+	// simulaMensagem('31971638616@c.us', 'P');
+	// simulaMensagem('31971638616@c.us', '40');
+	// simulaMensagem('31971638616@c.us', '15');
+	// simulaMensagem('31971638616@c.us', 'sim');
+	// simulaMensagem('31971638616@c.us', '1'); // Adiciona mais luvas
+	// simulaMensagem('31971638616@c.us', '2');
+	// simulaMensagem('31971638616@c.us', 'PP');
+	// simulaMensagem('31971638616@c.us', 'M');
+	// simulaMensagem('31971638616@c.us', '5');
+	// simulaMensagem('31971638616@c.us', 'sim');
+	// simulaMensagem('31971638616@c.us', '3');
+	// simulaMensagem('31971638616@c.us', 'sim');
+	// simulaMensagem('31971638616@c.us', 'Avenida Marechal Castelo branco 265 JK');
+	// // Segundo pedido
+	// simulaMensagem('31971638617@c.us', '!oi');
+	// simulaMensagem('31971638617@c.us', '1');
+	// simulaMensagem('31971638617@c.us', '1');
+	// simulaMensagem('31971638617@c.us', 'P');
+	// simulaMensagem('31971638617@c.us', '10');
+	// simulaMensagem('31971638617@c.us', 'sim');
+	// simulaMensagem('31971638617@c.us', '1'); // Adiciona mais luvas
+	// simulaMensagem('31971638617@c.us', '2');
+	// simulaMensagem('31971638617@c.us', 'G');
+	// simulaMensagem('31971638617@c.us', '8');
+	// simulaMensagem('31971638617@c.us', 'sim');
+	// simulaMensagem('31971638617@c.us', '3');
+	// simulaMensagem('31971638617@c.us', 'sim');
+	// simulaMensagem('31971638617@c.us', 'Avenida Marechal Castelo branco 265 JK');
 
 });
 
