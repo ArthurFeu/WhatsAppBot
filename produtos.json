@@ -1,0 +1,31 @@
+[
+	{
+	  "id": 1,
+	  "nome": "Luva Nitrílica",
+	  "estoque": {"P": 30, "M": 40, "G": 30},
+	  "preco_unidade": 25.0,
+	  "tipo": "luva"
+	},
+	{
+	  "id": 2,
+	  "nome": "Luva de Látex",
+	  "estoque": {"P": 20, "M": 15, "G": 15},
+	  "preco_unidade": 30.0,
+	  "tipo": "luva"
+	},
+	{
+	  "id": 3,
+	  "nome": "Álcool em Gel",
+	  "estoque": 200,
+	  "preco_unidade": 5.0,
+	  "tipo": "produto"
+	},
+	{
+	  "id": 4,
+	  "nome": "Máscara Cirúrgica",
+	  "estoque": 500,
+	  "preco_unidade": 0.5,
+	  "tipo": "produto"
+	}
+]
+  

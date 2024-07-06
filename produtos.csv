@@ -1,0 +1,5 @@
+id,nome,estoque,precoUnidade,tipo
+1,"Luva Nitrílica","{""PP"": 30,""P"": 30, ""M"": 40, ""G"": 0}",25.0,"luva"
+2,"Luva de Látex","{""P"": 0, ""M"": 15, ""G"": 15}",30.0,"luva"
+3,"Álcool em Gel",200,5.0,"produto"
+4,"Máscara Cirúrgica",500,0.5,"produto"
