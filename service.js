@@ -118,7 +118,7 @@ const trataQuantidadeEscolhida = (userMessage, contato, client, userState) => {
 }
 
 const exibeProduto = (objetoProduto) => {
-	return `Produto: ${objetoProduto.nome}\nTamanho: ${objetoProduto.tamanho}\n\nPreço unitário: R$${objetoProduto.precoUnidade.toFixed(2)}\nQuantidade: ${objetoProduto.quantidade}\n\nTotal: R$${(objetoProduto.valorTotalProduto).toFixed(2)}`;
+	return `Produto: ${objetoProduto.nome}\nTamanho: ${objetoProduto.tamanho}\n\nPreço unitário: R$${objetoProduto.precoUnidade.toFixed(2)}\nQuantidade: ${objetoProduto.quantidade}\n\nR$${(objetoProduto.valorTotalProduto).toFixed(2)}`;
 }
 
 
@@ -166,12 +166,21 @@ const trataAposPrimeiroItemAdicionado = (userMessage, contato, client, userState
 
 		case "3":
 			let responseCarrinho = 'Aqui está o seu carrinho:\n';
-
+			let valorTotalPedido = 0;
 			userState[contato].carrinho.forEach(produto => {
-				responseCarrinho += exibeProduto(produto);
+				valorTotalPedido += produto.valorTotalProduto;
 			});
 
+			userState[contato].carrinho.forEach(produto => {
+				responseCarrinho += "\n*=================*\n\n";
+				responseCarrinho += exibeProduto(produto);
+				responseCarrinho += "\n";
+			});
+			responseCarrinho += `\n*=================*\n\nValor total do pedido: *R$${valorTotalPedido.toFixed(2)}*`;
+
 			client.sendMessage(contato, responseCarrinho);
+
+
 			client.sendMessage(contato, 'Deseja finalizar o pedido? Digite "sim" ou "não".');
 			atualizaEstado(contato, userState, 10);
 			break;
@@ -191,20 +200,7 @@ const trataAposPrimeiroItemAdicionado = (userMessage, contato, client, userState
 
 const trataFechamentoDePedido = (userMessage, contato, client, userState) => {
 	if (userMessage === 'sim') {
-		let valorTotalPedido = 0;
-
-		userState[contato].carrinho.forEach(produto => {
-			valorTotalPedido += produto.valorTotalProduto;
-		});
-
-		client.sendMessage(contato, 'Pedido finalizado! Aqui está o seu resumo de compra:');
-
-		userState[contato].carrinho.forEach(produto => {
-			client.sendMessage(contato, exibeProduto(produto));
-		});
-
-		client.sendMessage(contato, `Total do pedido: R$${valorTotalPedido.toFixed(2)}.`);
-		client.sendMessage(contato, 'Digite seu endereço para entrega:');
+		client.sendMessage(contato, 'Certo, digite seu endereço para negociarmos a entrega:');
 		atualizaEstado(contato, userState, 11); // Finalizar pedido com endereço de entrega
 
 	} else if (userMessage === 'não') {
@@ -220,6 +216,7 @@ const trataEntregaDePedido = (userMessage, contato, client, userState) => {
 	if (userMessage.length > 0) {
 		client.sendMessage(contato, "Obrigado! Um atendente irá combinar a entrega com você em breve. Obrigado por comprar com a SupriLab!");
 		atualizaEstado(contato, userState, 0); // Voltar para o menu inicial
+		userState[contato].carrinho = []; // Limpar carrinho
 	}
 }
 

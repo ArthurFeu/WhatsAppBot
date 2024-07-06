@@ -26,22 +26,22 @@ client.on('qr', qr => {
 
 client.on('ready', () => {
 	console.log('=== BOT EM FUNCIONAMENTO ===');
-	// simulaMensagem('31971638616@c.us', '!oi');
-	// simulaMensagem('31971638616@c.us', '1');
-	// simulaMensagem('31971638616@c.us', '1');
-	// simulaMensagem('31971638616@c.us', 'P');
-	// simulaMensagem('31971638616@c.us', '40');
-	// simulaMensagem('31971638616@c.us', '15');
-	// simulaMensagem('31971638616@c.us', 'sim');
-	// simulaMensagem('31971638616@c.us', '1'); // Adiciona mais luvas
-	// simulaMensagem('31971638616@c.us', '2');
-	// simulaMensagem('31971638616@c.us', 'PP');
-	// simulaMensagem('31971638616@c.us', 'M');
-	// simulaMensagem('31971638616@c.us', '5');
-	// simulaMensagem('31971638616@c.us', 'sim');
-	// simulaMensagem('31971638616@c.us', '3');
-	// simulaMensagem('31971638616@c.us', 'sim');
-	// simulaMensagem('31971638616@c.us', 'Avenida Marechal Castelo branco 265 JK');
+	simulaMensagem('31971638616@c.us', '!oi');
+	simulaMensagem('31971638616@c.us', '1');
+	simulaMensagem('31971638616@c.us', '1');
+	simulaMensagem('31971638616@c.us', 'P');
+	simulaMensagem('31971638616@c.us', '40');
+	simulaMensagem('31971638616@c.us', '15');
+	simulaMensagem('31971638616@c.us', 'sim');
+	simulaMensagem('31971638616@c.us', '1'); // Adiciona mais luvas
+	simulaMensagem('31971638616@c.us', '2');
+	simulaMensagem('31971638616@c.us', 'PP');
+	simulaMensagem('31971638616@c.us', 'M');
+	simulaMensagem('31971638616@c.us', '5');
+	simulaMensagem('31971638616@c.us', 'sim');
+	simulaMensagem('31971638616@c.us', '3');
+	simulaMensagem('31971638616@c.us', 'sim');
+	simulaMensagem('31971638616@c.us', 'Avenida Marechal Castelo branco 265 JK');
 
 
 });
